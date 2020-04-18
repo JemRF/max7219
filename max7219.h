@@ -70,8 +70,7 @@
 *           Therfore the binary representation of 'I' is as follows
 *
 *           abcdefg
-*           0000011
-            1011011
+*           0110000
 * 
 *           The table below contains all the binary values for the desired font. New font characters
 *           can be added or altered as required. 
