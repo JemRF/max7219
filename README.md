@@ -20,7 +20,7 @@ e.g.
 ```
 max7219.DisplayText("96.78F", RIGHT);
 ```
-##Write to specific digits on the display using the DisplayChar method:
+## Write to specific digits on the display using the DisplayChar method:
 ```
 DiaplayChar(Digit, Char, Decimal)
 ```
