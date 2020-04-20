@@ -7,8 +7,8 @@
 ## An easy to use library that allows you to write to the display, using the DisplayText method. 
 
 DisplayText(Text, Justification)
-Text : The text you want to display (8 charachrts or less, plus up to 8 decimals)
-Justification : Left or right justified. LEFT(0) or RIGHT(1). 
+ - Text : The text you want to display (8 charachrts or less, plus up to 8 decimals)
+ - Justification : Left or right justified. LEFT(0) or RIGHT(1). 
 
 e.g.:
 ```
@@ -24,9 +24,9 @@ max7219.DisplayText("96.78F", RIGHT);
 ```
 DiaplayChar(Digit, Char, Decimal)
 ```
-Digit : represents the digit number 0-7 (Rightmost Digit = 7, Leftmost Digit = 0)
-Char : The character to display
-Decimal : A flag to illuminate the decimal (true/false)
+ - Digit : represents the digit number 0-7 (Rightmost Digit = 7, Leftmost Digit = 0)
+ - Char : The character to display
+ - Decimal : A flag to illuminate the decimal (true/false)
 
 e.g.
 ```
