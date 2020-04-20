@@ -1,10 +1,10 @@
 # max7219
-##A library for the MAX7219 7 segment 8 digit display with decimals.
+## A library for the MAX7219 7 segment 8 digit display with decimals.
 
 
 ![MAX8219 Connected to Arduino UNO](https://github.com/JemRF/max7219/blob/master/pictures/MAX7219%20and%20Arduino.jpg)
 
-##An easy to use library that allows you to write to the display, using the DisplayText method. 
+## An easy to use library that allows you to write to the display, using the DisplayText method. 
 
 DisplayText(Text, Justification)
 Text : The text you want to display (8 charachrts or less, plus up to 8 decimals)
@@ -14,7 +14,7 @@ e.g.:
 ```
 max7219.DisplayText("HELLO", LEFT);
 ```
-##Including decimals in the text will automatically take care of decimals like this:
+## Including decimals in the text will automatically take care of decimals like this:
 
 e.g.
 ```
@@ -32,7 +32,7 @@ e.g.
 ```
 max7219.DisplayChar(5, 'L', false);
 ```
-##Create your own fonts and symbols
+## Create your own fonts and symbols
 
 A font library is included but can be modified by editing the max7219.h file.
 
