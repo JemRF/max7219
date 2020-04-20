@@ -7,7 +7,7 @@
 ## An easy to use library that allows you to write to the display, using the DisplayText method. 
 
 DisplayText(Text, Justification)
- - Text : The text you want to display (8 charachrts or less, plus up to 8 decimals)
+ - Text : The text you want to display (8 characters or less, plus up to 8 decimals)
  - Justification : Left or right justified. LEFT(0) or RIGHT(1). 
 
 e.g.:
