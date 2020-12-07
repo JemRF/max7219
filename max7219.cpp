@@ -38,7 +38,7 @@
 *  - The host communicates with the MAX7219 using three signals: CLK (pin 10), CS (pin 11), DIN (pin 12). 
 *  - Pins can be configured in max7219.h
 *  - The MAX7219 is a SPI interface
-*  - This lbtary uses the buitbang method for communication with the MAX7219 
+*  - This library uses the bitbang method for communication with the MAX7219 
 *
 * Usage
 *
@@ -46,13 +46,13 @@
 *  
 *  1. Begin
 *  This method initializes communication, takes the display out of test mode, clears the screen and sets intensity.
-*  Intensity is set at maximum but can be coinfigured in max7219.h
+*  Intensity is set at maximum but can be configured in max7219.h
 *  
 *  2. DisplayChar(Digit, Value, DP)
-*  This method displays a single value (charachter) in position DIGIT (0=right most digit, 7=left most digit)
+*  This method displays a single value (character) in position DIGIT (0=right most digit, 7=left most digit)
 *  
 *  3. DisplayText(Text, Justify)
-*  This method displays a text string (Text) either right justified (Justify=0) ot left justified (Justify=1) 
+*  This method displays a text string (Text) either right justified (Justify=0) or left justified (Justify=1) 
 */
 
 #include "max7219.h"
@@ -156,7 +156,7 @@ void MAX7219::DisplayChar(int digit, char value, bool dp) {
       MAX7219_Write(digit+1,MAX7219_LookupCode(value, dp));
 }
 
-static void MAX7219::MAX7219_ShutdownStop (void)
+void MAX7219::MAX7219_ShutdownStop (void)
 {
   MAX7219::MAX7219_Write(REG_SHUTDOWN, 1);   
 }
